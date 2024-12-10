@@ -153,6 +153,20 @@
       margin: 3px;
       padding: 5px;
     }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .container img {
+      height: 300px;
+      /* Adjust the height as needed */
+      object-fit: cover;
+      margin: 10px;
+    }
   </style>
 
   <!--<h1 class="title is-1 publication-title">COLE :A Hierarchical Generation Framework for Graphic Design</h1>-->
@@ -254,6 +268,15 @@
                   </a>
                 </span>
 
+                <span class="link-block">
+                  <a href="http://20.3.138.187:7860/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      🚀
+                    </span>
+                    <span>Demo</span>
+                  </a>
+                </span>
+
                 <!-- <span class="link-block">
                   <a href="https://glyph-byt5-v2.github.io/" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -270,8 +293,7 @@
       </div>
   </section>
 
-
-  <section class="section">
+  <!-- <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-vcentered interpolation-panel">
         <div class="columns is-centered">
@@ -348,6 +370,13 @@
     </div>
   </section>
   <br>
+  <br> -->
+
+  <div class="container">
+    <img src="static/img/Real/cake.png" alt="Image 1">
+    <img src="static/img/Real/table.png" alt="Image 2">
+  </div>
+
   <br>
 
   <section class="section">
@@ -393,8 +422,8 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method Overview</h2>
-        <img src="./static/img/method/autoencoder.png" alt="pipeline" style="width: 80;">
-        <img src="./static/img/method/transformer.png" alt="pipeline" style="width: 80%;">
+        <img src="./static/img/method/autoencoder.png" alt="pipeline" style="width: 60%;">
+        <img src="./static/img/method/transformer.png" alt="pipeline" style="width: 60%;">
         <br>
       </div>
     </div>
@@ -404,7 +433,48 @@
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Edit Demo Video</h2>
+        <h2 class="title is-3">Core Contribution</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 style="text-align: center; font-size: 1.5em; font-weight: bold;">Anonymous Layout</h1>
+          <img src="./static/img/Core/intro_layout.png" alt="pipeline" style="width: 80%;">
+          <br>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 style="text-align: center; font-size: 1.5em; font-weight: bold;">Flexible Layout Support</h1>
+          <br>
+          <img src="./static/img/Core/flexible_layout.PNG" alt="pipeline" style="width: 80%;">
+          <br>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 style="text-align: center; font-size: 1.5em; font-weight: bold;">Numerous Distinct Layers</h1>
+          <br>
+          <img src="./static/img/Core/numerous_1.PNG" alt="pipeline" style="width: 70%;">
+          <img src="./static/img/Core/numerous_2.PNG" alt="pipeline" style="width: 70%;">
+          <br>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 style="text-align: center; font-size: 1.5em; font-weight: bold;">Efficiency Compare</h1>
+          <img src="./static/img/Core/efficiency.png" alt="pipeline" style="width: 80%;">
+          <br>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Layer-wise Edit Demo Video</h2>
         <div class="publication-video">
           <video controls width="100%">
             <source src="static/video/demo_en_v2.mp4" type="video/mp4">
@@ -414,22 +484,7 @@
       </div>
     </div>
 
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Design Diversity with Different Random Seeds</h2>
-        <br>
-      </div>
-    </div>
-
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <img src="./static/assets/method/region_wise_sdedit.png" alt="pipeline" style="width: 80%;">
-        <p style="text-align: center;">image description</p>
-        <br>
-      </div>
-    </div>
-
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-2 ">
         <img src="./static/assets/edit/dalle_1.png" class="interpolation-image"
           alt="Interpolate start reference image." />
@@ -552,44 +607,35 @@
         <img src="./static/assets/gpt4/gpt_box_5.png" class="interpolation-image"
           alt="Interpolate start reference image." />
       </div>
-    </div>
+    </div> -->
   </section>
   <br>
-  <br>
-
+  <br> 
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>
-    	@article{liu2024glyph,
-  		title={Glyph-byt5: A customized text encoder for accurate visual text rendering},
-  		author={Liu, Zeyu and Liang, Weicong and Liang, Zhanhao and Luo, Chong and Li, Ji and Huang, Gao and Yuan, Yuhui},
-  		journal={arXiv preprint arXiv:2403.09622},
-  		year={2024}
-	}
-    </code></pre>
-
-      <pre><code>
-    	@article{liu2024glyphv2,
-  		title={Glyph-ByT5-v2: A Strong Aesthetic Baseline for Accurate Multilingual Visual Text Rendering},
-  		author={Liu, Zeyu and Liang, Weicong and Zhao, Yiming and Chen, Bohan and Li, Ji and Yuan, Yuhui},
-  		journal={arXiv preprint arXiv:2406.10208},
-  		year={2024}
-	}
-    </code></pre>
+        @misc{jia2024cole,
+          title={COLE: A Hierarchical Generation Framework for Multi-Layered and Editable Graphic Design}, 
+          author={Peidong Jia and Chenxuan Li and Yuhui Yuan and Zeyu Liu and Yichao Shen and Bohan Chen and Xingru Chen and Yinglin Zheng and Dong Chen and Ji Li and Xiaodong Xie and Shanghang Zhang and Baining Guo},
+          year={2024},
+          eprint={2311.16974},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV}
+    }
+      </code></pre>
     </div>
   </section>
-
-
-  <section class="section" id="Acknowledgements">
-    <div class="container is-max-desktop content">
-      <h2 class="title">Acknowledgements</h2>
-      <br>
-      Website adapted from the following <a href="https://nerfies.github.io/">template</a>.
+  
+  
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 style="text-align: center; font-size: 1.5em; font-weight: bold;">Acknowledgements</h1>
+        Website adapted from the following <a href="https://nerfies.github.io/">template</a>
+        <br>
     </div>
-  </section>
-
-</body>
-
-</html>
+  </div>
+  
+  </body>
+  </html>
