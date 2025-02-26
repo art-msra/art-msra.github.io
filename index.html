@@ -177,10 +177,23 @@
 
         iframe {
             border: none; /* 可选：移除 iframe 边框 */
-        }
-  </style>
+    }
 
-  <!--<h1 class="title is-1 publication-title">COLE :A Hierarchical Generation Framework for Graphic Design</h1>-->
+    .container-row {
+      display: flex;
+      justify-content: space-between; /* 均匀分布图片 */
+      margin-bottom: 20px;  /* 行间距 */
+      width: 100%;
+    }
+
+    .container-row img {
+      flex: 1;             /* 等分容器宽度 */
+      height: 300px;       /* 固定高度 */
+      object-fit: cover;   /* 保持比例填充高度 */
+      margin: 0 5px;       /* 图片间距 */
+      border-radius: 4px;  /* 可选圆角 */
+    }
+  </style>
 
   <section class="hero">
     <div class="hero-body">
@@ -275,11 +288,11 @@
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2403.09622" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/pdf/2502.18364" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
-                    <span>arXiv TO DO</span>
+                    <span>arXiv</span>
                   </a>
                 </span>
 
@@ -397,14 +410,19 @@
   <br>
   <br> -->
 
-  <div class="container2">
-    <img src="static/img/Real/cake.png" alt="Image 1" style="height: 445px; width: auto;">
-    <img src="static/img/Real/table.png" alt="Image 2" style="height: 445px; width: auto;">
+  <div class="container-row">
+    <!-- <img src="static/img/Real/cake.png" alt="Image 1" style="height: 445px; width: auto;">
+    <img src="static/img/Real/table.png" alt="Image 2" style="height: 445px; width: auto;"> -->
+    <img src="static/img/2_26_new/1.png" alt="Image 1">
+    <img src="static/img/2_26_new/2.png" alt="Image 2">
+    <img src="static/img/2_26_new/3.png" alt="Image 3">
+    <img src="static/img/2_26_new/4.png" alt="Image 4">
   </div>
-  <div class="container2">
-    <img src="static/img/Real/1.png" alt="Image 3">
-    <img src="static/img/Real/2.png" alt="Image 4">
-    <img src="static/img/Real/3.png" alt="Image 5">
+  <div class="container-row">
+    <img src="static/img/2_26_new/5.png" alt="Image 5">
+    <img src="static/img/2_26_new/6.png" alt="Image 6">
+    <img src="static/img/2_26_new/7.png" alt="Image 7">
+    <img src="static/img/2_26_new/8.png" alt="Image 8">
   </div>
 
   <div class="iframe-container">
